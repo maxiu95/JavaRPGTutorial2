@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial. &#10;added keyboard input and keyhandler class for WASD movement and set the FPS to 60. included is 2 methods to set FPS- sleep/delta.">
-      <change afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial. &#10;Created a game entity package and class, as well as a player class- moving all player movement into its seperate class.">
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_down1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_down2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_left1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_left2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_right1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_right2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_up1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/anpanman_up2.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG_anotherTutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RPG_anotherTutorial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/matthew/Documents/Java/RPG_anotherTutorial/res/player",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/player" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
@@ -88,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699624995982</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented code from second video of youtube tutorial. &#10;Created a game entity package and class, as well as a player class- moving all player movement into its seperate class.">
+      <created>1699674063262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699674063262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented code from first video of youtube tutorial. &#10;In main package implemented a main method that creates a window and gamePanel. Also implemented a gamePanel class that sets up and creates a Jpanel while implementing and creating a thread for the game loop.It also includes all the tile size and settings." />
     <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;added keyboard input and keyhandler class for WASD movement and set the FPS to 60. included is 2 methods to set FPS- sleep/delta." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial. &#10;added keyboard input and keyhandler class for WASD movement and set the FPS to 60. included is 2 methods to set FPS- sleep/delta." />
+    <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;Created a game entity package and class, as well as a player class- moving all player movement into its seperate class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial. &#10;Created a game entity package and class, as well as a player class- moving all player movement into its seperate class." />
   </component>
 </project>
