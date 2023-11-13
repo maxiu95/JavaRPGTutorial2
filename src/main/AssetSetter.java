@@ -1,6 +1,7 @@
 package main;
 
 import object.OBJ_Anpan;
+import object.OBJ_PicnicBasket;
 
 public class AssetSetter {
 
@@ -48,8 +49,12 @@ public class AssetSetter {
         gp.obj[8].worldX = 46 * gp.tileSize;
         gp.obj[8].worldY = 2 * gp.tileSize;
 
-        gp.obj[8] = new OBJ_Anpan();
-        gp.obj[8].worldX = 14 * gp.tileSize;
-        gp.obj[8].worldY = 1 * gp.tileSize;
+        gp.obj[9] = new OBJ_Anpan();
+        gp.obj[9].worldX = 14 * gp.tileSize;
+        gp.obj[9].worldY = 1 * gp.tileSize;
+
+        gp.obj[10] = new OBJ_PicnicBasket();
+        gp.obj[10].worldX = 6 * gp.tileSize;
+        gp.obj[10].worldY = 25 * gp.tileSize;
     }
 }

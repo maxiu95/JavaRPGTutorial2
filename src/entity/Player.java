@@ -26,6 +26,9 @@ public class Player extends Entity {
 
         // ==*COLLISION AREA*==
         solidArea = new Rectangle(6, 12, 24, 18);
+        // interact with objects
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
 
         setDefaultValues();
         getPlayerImage();
@@ -78,6 +81,9 @@ public class Player extends Entity {
             // ==* CHECK TILE COLLISION*==
             collisionOn = false;
             gp.cChecker.checkTile(this);
+
+            // ==*CHECK OBJECT COLLISION*==
+            int objIndex = gp.cChecker.checkObject(this, true);
 
             // ==* IF COLLISION IS FALSE, PLAYER CAN MOVE
             if(collisionOn == false) {

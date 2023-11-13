@@ -34,12 +34,12 @@ public class GamePanel extends JPanel implements Runnable {
     public CollisionChecker cChecker = new CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
     public Player player = new Player(this, keyH);
-    public SuperObject obj[] = new SuperObject[10]; // can display up to 10 objects at once
+    public SuperObject obj[] = new SuperObject[11]; // can display up to 11 objects at once [10 anpan, 1 picnic basket]
 
     public GamePanel() {
 
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
-        this.setBackground(Color.PINK);
+        this.setBackground(Color.BLACK);
         this.setDoubleBuffered(true);
         // ++*FOR KEYBOARD INPUT*==
         this.addKeyListener(keyH);
