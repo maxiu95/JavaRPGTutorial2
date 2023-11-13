@@ -20,10 +20,11 @@ public class Player extends Entity {
         this.gp = gp;
         this.keyH = keyH;
 
-        screenX = gp.screenWidth / 2 - (gp.tileSize / 2); // centre player to screen
+        // ==*CENTRE PLAYER ON SCREEN*==
+        screenX = gp.screenWidth / 2 - (gp.tileSize / 2);
         screenY = gp.screenHeight / 2 - (gp.tileSize / 2);
 
-        // collision area
+        // ==*COLLISION AREA*==
         solidArea = new Rectangle(6, 12, 24, 18);
 
         setDefaultValues();
@@ -57,6 +58,7 @@ public class Player extends Entity {
 
     public void update() {
 
+        // ==*UPDATE MOVEMENT*==
         if(keyH.upPressed || keyH.downPressed || keyH.leftPressed || keyH.rightPressed) {
 
             if(keyH.upPressed) {
@@ -81,23 +83,16 @@ public class Player extends Entity {
             if(collisionOn == false) {
 
                 switch (direction) {
-                    case "up":
-                        worldY -= speed;
-                        break;
-                    case "down":
-                        worldY += speed;
-                        break;
-                    case "left":
-                        worldX -= speed;
-                        break;
-                    case "right":
-                        worldX += speed;
-                        break;
+                    case "up": worldY -= speed; break;
+                    case "down": worldY += speed; break;
+                    case "left": worldX -= speed; break;
+                    case "right": worldX += speed; break;
                 }
             }
 
+            // ==*SPRITE ANIMATION*==
             spriteCounter++;
-            if(spriteCounter > 15) {
+            if(spriteCounter > 15) { // sprite updates every 15 frames
                 if(spriteNumber == 1) {
                     spriteNumber = 2;
                 } else if(spriteNumber ==2) {
@@ -112,6 +107,7 @@ public class Player extends Entity {
 
         BufferedImage image = null;
 
+        // ==*SPRITE ANIMATION*==
         switch(direction) {
             case "up":
                 if(spriteNumber == 1) {

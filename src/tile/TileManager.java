@@ -29,18 +29,18 @@ public class TileManager {
 
         try {
 
-            tile[0] = new Tile(); // grass
+            tile[0] = new Tile(); // ==*GRASS*==
             tile[0].image = ImageIO.read(getClass().getResourceAsStream("/tiles/grass.png"));
-            tile[1] = new Tile(); // water
+            tile[1] = new Tile(); // ==*WATER*==
             tile[1].image = ImageIO.read(getClass().getResourceAsStream("/tiles/water.png"));
             tile[1].collision = true; // set tile collision
-            tile[2] = new Tile(); // wall
+            tile[2] = new Tile(); // ==*WALL*==
             tile[2].image = ImageIO.read(getClass().getResourceAsStream("/tiles/wall.png"));
             tile[2].collision = true;
-            tile[3] = new Tile(); // tree
+            tile[3] = new Tile(); // ==*TREE*==
             tile[3].image = ImageIO.read(getClass().getResourceAsStream("/tiles/tree.png"));
             tile[3].collision = true;
-            tile[4] = new Tile(); // dirt
+            tile[4] = new Tile(); // ==*DIRT*==
             tile[4].image = ImageIO.read(getClass().getResourceAsStream("/tiles/dirt.png"));
 
         } catch (IOException e) {
