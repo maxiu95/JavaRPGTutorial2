@@ -10,7 +10,7 @@ public class Main {
         GamePanel gamePanel = new GamePanel();
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.setTitle("2D Adventure.");
+        window.setTitle("Anpanman 2D Adventure.");
 
         window.add(gamePanel);
 

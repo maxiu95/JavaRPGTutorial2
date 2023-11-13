@@ -12,8 +12,8 @@ import java.io.InputStreamReader;
 public class TileManager {
 
     GamePanel gp;
-    Tile[] tile; // array to store tiles
-    int mapTileNumber[][]; // store the tile numbers from map.txt file
+    public Tile[] tile; // array to store tiles
+    public int mapTileNumber[][]; // store the tile numbers from map.txt file
 
     public TileManager(GamePanel gp) {
 
@@ -33,10 +33,13 @@ public class TileManager {
             tile[0].image = ImageIO.read(getClass().getResourceAsStream("/tiles/grass.png"));
             tile[1] = new Tile(); // water
             tile[1].image = ImageIO.read(getClass().getResourceAsStream("/tiles/water.png"));
+            tile[1].collision = true; // set tile collision
             tile[2] = new Tile(); // wall
             tile[2].image = ImageIO.read(getClass().getResourceAsStream("/tiles/wall.png"));
+            tile[2].collision = true;
             tile[3] = new Tile(); // tree
             tile[3].image = ImageIO.read(getClass().getResourceAsStream("/tiles/tree.png"));
+            tile[3].collision = true;
             tile[4] = new Tile(); // dirt
             tile[4].image = ImageIO.read(getClass().getResourceAsStream("/tiles/dirt.png"));
 

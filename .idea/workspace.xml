@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial. &#10;added a map folder to the resources source directory and a test map as txt file. this file as well as the tiles are passed into the program via the TileManager clas- loads all tiles and renders them according to the map.txt file.">
-      <change afterPath="$PROJECT_DIR$/res/maps/anpan_map.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/dirt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/tree.png" afterDir="false" />
+    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial. &#10;added a new complete map 50x50 with some new tiles. adjusted the code to accomodate and draw the larger map while implementing a camera scroll and centering character on the screen. map scrolling loads the map as you move to improve efficiency">
+      <change afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/map01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/player/anpanman_left2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/res/player/anpanman_left2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/player/anpanman_right2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/res/player/anpanman_right2.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699756022953</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented code from second video of youtube tutorial. &#10;added a new complete map 50x50 with some new tiles. adjusted the code to accomodate and draw the larger map while implementing a camera scroll and centering character on the screen. map scrolling loads the map as you move to improve efficiency">
+      <created>1699835869049</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699835869049</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +160,7 @@
     <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;added all player sprites into player class as well as movement and simple animation when a movement key is pressed. also set animation speed" />
     <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;changed FPS to 30" />
     <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;added a map folder to the resources source directory and a test map as txt file. this file as well as the tiles are passed into the program via the TileManager clas- loads all tiles and renders them according to the map.txt file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial. &#10;added a map folder to the resources source directory and a test map as txt file. this file as well as the tiles are passed into the program via the TileManager clas- loads all tiles and renders them according to the map.txt file." />
+    <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;added a new complete map 50x50 with some new tiles. adjusted the code to accomodate and draw the larger map while implementing a camera scroll and centering character on the screen. map scrolling loads the map as you move to improve efficiency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial. &#10;added a new complete map 50x50 with some new tiles. adjusted the code to accomodate and draw the larger map while implementing a camera scroll and centering character on the screen. map scrolling loads the map as you move to improve efficiency" />
   </component>
 </project>
