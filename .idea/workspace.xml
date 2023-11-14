@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.&#10;added UI elements for the anpan and picnic basket counters to the screen implementing a UI class to handle UI elements">
+    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
@@ -188,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699927411727</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Implemented code from second video of youtube tutorial.">
+      <created>1699929130790</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699929130790</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,12 +219,12 @@
     <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;added a map folder to the resources source directory and a test map as txt file. this file as well as the tiles are passed into the program via the TileManager clas- loads all tiles and renders them according to the map.txt file." />
     <MESSAGE value="Implemented code from second video of youtube tutorial. &#10;added a new complete map 50x50 with some new tiles. adjusted the code to accomodate and draw the larger map while implementing a camera scroll and centering character on the screen. map scrolling loads the map as you move to improve efficiency" />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;added collision to the anpanman character and map tiles. anpanman will colide with water, wall and tree tiles. this was done by creating an abstract square over the anpanman sprite and during movement each tile anpanman moves into is first checked if its a collision tile, if so anpanman will colide once the collision square hits the edge of the tile. Collision is detected in the new CollisionChecker class." />
-    <MESSAGE value="Implemented code from second video of youtube tutorial." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;Added 'anpan' objects to the world. there are 10 littered around the map to find. They were added via super object class (all objects are children of) and the anpan OBJ class. OBJ class creates the 'anpan' object and the assetSetter class sets creates all instances to the object array and sets their locations." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;started on object collision." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;small code updates eg title" />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;added UI elements for the anpan and picnic basket counters to the screen implementing a UI class to handle UI elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial.&#10;added UI elements for the anpan and picnic basket counters to the screen implementing a UI class to handle UI elements" />
+    <MESSAGE value="Implemented code from second video of youtube tutorial." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial." />
   </component>
 </project>

@@ -130,8 +130,8 @@ public class Player extends Entity {
                         hasAnpan = 0;
                     }
                     if(picnicAnpan == 10) {
-                        System.out.println("CONGRATULATIONS! YOU FOUND ALL THE ANPAN!!");
-                        System.out.println("NOW WE CAN ENJOY THE PICNIC!\n");
+                        // ==*GAME END*==
+                        gp.ui.gameFinished = true;
                     }
                     break;
                 // ==*TEMP NPC CODE*==
@@ -139,12 +139,10 @@ public class Player extends Entity {
                     gp.ui.showMessage("Hey Anpanman, can you collect 10 anpan for me?");
                     break;
                 case "CurrypanMan":
-                    System.out.println("HOW'S IT GOING ANPANMAN?");
-                    System.out.println("DID YOU FIND ALL THE ANPAN YET?\n");
+                    gp.ui.showMessage("How're you doing Anpanman?");
                     break;
                 case "ShokupanMan":
-                    System.out.println("BOY I CAN'T WAIT FOR THE PICNIC ANPANMAN!");
-                    System.out.println("DID YOU FIND ALL THE ANPAN YET?\n");
+                    gp.ui.showMessage("Boy, I can't wait for the picnic!!");
                     break;
             }
         }
