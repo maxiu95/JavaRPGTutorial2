@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.&#10;started on object collision.">
-      <change afterPath="$PROJECT_DIR$/res/objects/currypanman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/objects/jamojisan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/objects/shokupanman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Currypanman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Ojisan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Shokupanman.java" afterDir="false" />
+    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699856670559</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index.">
+      <created>1699920255079</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699920255079</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +201,7 @@
     <MESSAGE value="Implemented code from second video of youtube tutorial." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;Added 'anpan' objects to the world. there are 10 littered around the map to find. They were added via super object class (all objects are children of) and the anpan OBJ class. OBJ class creates the 'anpan' object and the assetSetter class sets creates all instances to the object array and sets their locations." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;started on object collision." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial.&#10;started on object collision." />
+    <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index." />
   </component>
 </project>
