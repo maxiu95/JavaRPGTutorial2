@@ -136,8 +136,7 @@ public class Player extends Entity {
                     break;
                 // ==*TEMP NPC CODE*==
                 case "Ojisan":
-                    System.out.println("HEY ANPANMAN, CAN YOU COLLECT ALL 10 ANPAN AND PUT THEM IN THE PICNIC BASKET FOR ME?");
-                    System.out.println("GOOD LUCK!\n");
+                    gp.ui.showMessage("Hey Anpanman, can you collect 10 anpan for me?");
                     break;
                 case "CurrypanMan":
                     System.out.println("HOW'S IT GOING ANPANMAN?");
