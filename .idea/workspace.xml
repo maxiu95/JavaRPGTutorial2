@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.&#10;Added 'anpan' objects to the world. there are 10 littered around the map to find. They were added via super object class (all objects are children of) and the anpan OBJ class. OBJ class creates the 'anpan' object and the assetSetter class sets creates all instances to the object array and sets their locations.">
-      <change afterPath="$PROJECT_DIR$/res/objects/picnicBasket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_PicnicBasket.java" afterDir="false" />
+    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.&#10;started on object collision.">
+      <change afterPath="$PROJECT_DIR$/res/objects/currypanman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/jamojisan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/shokupanman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Currypanman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Ojisan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Shokupanman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699853389212</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implemented code from second video of youtube tutorial.&#10;started on object collision.">
+      <created>1699856670559</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699856670559</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +201,7 @@
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;added collision to the anpanman character and map tiles. anpanman will colide with water, wall and tree tiles. this was done by creating an abstract square over the anpanman sprite and during movement each tile anpanman moves into is first checked if its a collision tile, if so anpanman will colide once the collision square hits the edge of the tile. Collision is detected in the new CollisionChecker class." />
     <MESSAGE value="Implemented code from second video of youtube tutorial." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;Added 'anpan' objects to the world. there are 10 littered around the map to find. They were added via super object class (all objects are children of) and the anpan OBJ class. OBJ class creates the 'anpan' object and the assetSetter class sets creates all instances to the object array and sets their locations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial.&#10;Added 'anpan' objects to the world. there are 10 littered around the map to find. They were added via super object class (all objects are children of) and the anpan OBJ class. OBJ class creates the 'anpan' object and the assetSetter class sets creates all instances to the object array and sets their locations." />
+    <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;started on object collision." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial.&#10;started on object collision." />
   </component>
 </project>

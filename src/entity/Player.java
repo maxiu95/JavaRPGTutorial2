@@ -4,6 +4,7 @@ import main.GamePanel;
 import main.KeyHandler;
 
 import javax.imageio.ImageIO;
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -15,6 +16,8 @@ public class Player extends Entity {
 
     public final int screenX; // where we draw the player on the screen
     public final int screenY;
+    int hasAnpan = 0;
+    int picnicAnpan = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
         this.gp = gp;
@@ -84,6 +87,7 @@ public class Player extends Entity {
 
             // ==*CHECK OBJECT COLLISION*==
             int objIndex = gp.cChecker.checkObject(this, true);
+            pickupObject(objIndex);
 
             // ==* IF COLLISION IS FALSE, PLAYER CAN MOVE
             if(collisionOn == false) {
@@ -105,6 +109,49 @@ public class Player extends Entity {
                     spriteNumber = 1;
                 }
                 spriteCounter = 0;
+            }
+        }
+    }
+
+    // ==*OBJECT INTERACTION*==
+    public void pickupObject(int i) {
+
+        if(i != 999) {
+
+            String objName = gp.obj[i].name;
+
+            switch(objName) {
+                case "Anpan":
+                    hasAnpan++;
+                    gp.obj[i] = null;
+                    System.out.println("Anpan: " + hasAnpan);
+                    System.out.println("Picnic Anpan: " + picnicAnpan +"\n");
+                    break;
+                case "PicnicBasket":
+                    if(hasAnpan > 0) {
+                        picnicAnpan += hasAnpan;
+                        hasAnpan = 0;
+                    }
+                    System.out.println("Anpan: " + hasAnpan);
+                    System.out.println("Picnic Anpan: " + picnicAnpan + "\n");
+                    if(picnicAnpan == 10) {
+                        System.out.println("CONGRATULATIONS! YOU FOUND ALL THE ANPAN!!");
+                        System.out.println("NOW WE CAN ENJOY THE PICNIC!\n");
+                    }
+                    break;
+                // ==*TEMP NPC CODE*==
+                case "Ojisan":
+                    System.out.println("HEY ANPANMAN, CAN YOU COLLECT ALL 10 ANPAN AND PUT THEM IN THE PICNIC BASKET FOR ME?");
+                    System.out.println("GOOD LUCK!\n");
+                    break;
+                case "CurrypanMan":
+                    System.out.println("HOW'S IT GOING ANPANMAN?");
+                    System.out.println("DID YOU FIND ALL THE ANPAN YET?\n");
+                    break;
+                case "ShokupanMan":
+                    System.out.println("BOY I CAN'T WAIT FOR THE PICNIC ANPANMAN!");
+                    System.out.println("DID YOU FIND ALL THE ANPAN YET?\n");
+                    break;
             }
         }
     }

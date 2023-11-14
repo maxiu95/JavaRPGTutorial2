@@ -34,7 +34,7 @@ public class GamePanel extends JPanel implements Runnable {
     public CollisionChecker cChecker = new CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
     public Player player = new Player(this, keyH);
-    public SuperObject obj[] = new SuperObject[11]; // can display up to 11 objects at once [10 anpan, 1 picnic basket]
+    public SuperObject obj[] = new SuperObject[15]; // can display up to 15 objects
 
     public GamePanel() {
 
@@ -117,7 +117,6 @@ public class GamePanel extends JPanel implements Runnable {
             }
 
             if(timer >= 1000000000) {
-                System.out.println("FPS" + drawCount);
                 drawCount = 0;
                 timer = 0;
             }

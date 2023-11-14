@@ -1,7 +1,6 @@
 package main;
 
-import object.OBJ_Anpan;
-import object.OBJ_PicnicBasket;
+import object.*;
 
 public class AssetSetter {
 
@@ -56,5 +55,18 @@ public class AssetSetter {
         gp.obj[10] = new OBJ_PicnicBasket();
         gp.obj[10].worldX = 6 * gp.tileSize;
         gp.obj[10].worldY = 25 * gp.tileSize;
+
+        // ==*TEMP OBJECT CHARACTER NPC*==
+        gp.obj[11] = new OBJ_Ojisan();
+        gp.obj[11].worldX = 7 * gp.tileSize;
+        gp.obj[11].worldY = 25 * gp.tileSize;
+
+        gp.obj[12] = new OBJ_Currypanman();
+        gp.obj[12].worldX = 43 * gp.tileSize;
+        gp.obj[12].worldY = 31 * gp.tileSize;
+
+        gp.obj[13] = new OBJ_Shokupanman();
+        gp.obj[13].worldX = 47 * gp.tileSize;
+        gp.obj[13].worldY = 6 * gp.tileSize;
     }
 }
