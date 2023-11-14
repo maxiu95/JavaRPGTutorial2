@@ -15,8 +15,8 @@ public class Player extends Entity {
 
     public final int screenX; // where we draw the player on the screen
     public final int screenY;
-    int hasAnpan = 0;
-    int picnicAnpan = 0;
+    public int hasAnpan = 0;
+    public int picnicAnpan = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
         this.gp = gp;
@@ -123,16 +123,12 @@ public class Player extends Entity {
                 case "Anpan":
                     hasAnpan++;
                     gp.obj[i] = null;
-                    System.out.println("Anpan: " + hasAnpan);
-                    System.out.println("Picnic Anpan: " + picnicAnpan +"\n");
                     break;
                 case "PicnicBasket":
                     if(hasAnpan > 0) {
                         picnicAnpan += hasAnpan;
                         hasAnpan = 0;
                     }
-                    System.out.println("Anpan: " + hasAnpan);
-                    System.out.println("Picnic Anpan: " + picnicAnpan + "\n");
                     if(picnicAnpan == 10) {
                         System.out.println("CONGRATULATIONS! YOU FOUND ALL THE ANPAN!!");
                         System.out.println("NOW WE CAN ENJOY THE PICNIC!\n");

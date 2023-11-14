@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index.">
+    <list default="true" id="7b864ed0-427f-4c3b-b764-a7debce81f3c" name="Changes" comment="Implemented code from second video of youtube tutorial.&#10;small code updates eg title">
+      <change afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699920255079</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implemented code from second video of youtube tutorial.&#10;small code updates eg title">
+      <created>1699920604236</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699920604236</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +210,22 @@
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;Added 'anpan' objects to the world. there are 10 littered around the map to find. They were added via super object class (all objects are children of) and the anpan OBJ class. OBJ class creates the 'anpan' object and the assetSetter class sets creates all instances to the object array and sets their locations." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;started on object collision." />
     <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial.&#10;Added object collision and simple object interaction. when you collide with an anpan, the counter goes up and it disappears from the world. if you touch the picnic basket with anpan in your inventory they transfer to the basket, resetting your counter. once all 10 are collected a congratulations message is printed in the terminal window. Also added some npc as object- they have dialogue that appears in the terminal when interacted with. &#10;&#10;these interactions are handled in the collision checker, returning a value- the value is passed into the player class which has a switch statement depending on the object index." />
+    <MESSAGE value="Implemented code from second video of youtube tutorial.&#10;small code updates eg title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented code from second video of youtube tutorial.&#10;small code updates eg title" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/entity/Player.java</url>
+          <line>115</line>
+          <properties class="entity.Player" method="pickupObject">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

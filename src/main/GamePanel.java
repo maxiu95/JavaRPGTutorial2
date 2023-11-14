@@ -35,6 +35,7 @@ public class GamePanel extends JPanel implements Runnable {
     public AssetSetter aSetter = new AssetSetter(this);
     public Player player = new Player(this, keyH);
     public SuperObject obj[] = new SuperObject[15]; // can display up to 15 objects
+    public UI ui = new UI(this);
 
     public GamePanel() {
 
@@ -142,6 +143,9 @@ public class GamePanel extends JPanel implements Runnable {
         }
         // ==*PLAYER*==
         player.draw(g2);
+
+        // ==*UI*==
+        ui.draw(g2);
 
         g2.dispose();
 
